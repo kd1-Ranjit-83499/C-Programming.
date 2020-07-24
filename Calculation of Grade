@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int choice=0;
+     
+    printf("1.>=85 \n2.>=70 \n3.>=55 \n4.>=40 \n5.<40 \n");
+    printf("Enter your choice: \n");  
+    scanf("%d",&choice);
+    
+    switch(choice)
+    {
+        case 1:
+            printf("Grade A");
+            break;
+        case 2:       
+            printf("Grade B");
+            break;
+        case 3: 
+            printf("Grade C");
+            break;
+        case 4:
+            printf("Grade D");
+            break;
+        case 5:
+            printf("Grade F");
+            break;
+        default:
+            printf("Your choice is invalid...");
+            break;
+    }   
+    return 0;
+}
