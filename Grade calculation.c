@@ -1,29 +1,36 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
     int m;
+    system("color fd");
     printf("Enter your marks: \n");
     scanf("%d",&m);
     
     if(m>=85)
         {
-            printf("Grade A");
+        system("color fa");
+        printf("Grade A");
         }
     else if(m>=70)
         {
-            printf("Grade B");
+        system("color fa");
+        printf("Grade B");
         }
     else if(m>=55)
         {
-            printf("Grade C");
+            system("color fa");
+        printf("Grade C");
         }
     else if(m>=40)
         {
-            printf("Grade D");
+            system("color fa");
+        printf("Grade D");
         }
     else if(m<40)
         {
-            printf("Grade F");
+           system("color fc");
+        printf("Grade F");
         }
     return 0;
 }
