@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include<stdlib.h>
 int main()
 {
     int a[3][3];
     int *b=&a;
     int i,j,sum=0;
+    system("color fd");
     printf("Enter 9 elements for 3x3 matrix : ");
     for(i=0;i<3;i++)
     {
@@ -29,6 +31,7 @@ int main()
          sum=sum+*(b+i*3+j);
         }
     }
+    system("color f1");
     printf("Sum of all diagonal elements is : %d",sum);
    return 0;
 }
